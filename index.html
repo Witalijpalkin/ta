@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Транзактный анализ</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+  </head>
+  <body>
+    <header class="flex header">
+      <div class="header__container">
+        <div class="flex header__content">
+          <nav class="flex header__nav">
+            <ul class="flex list-reset header__nav-list">
+              <li>Программа</li>
+              <li>Отзывы</li>
+              <li>Тренер</li>
+              <li>Стоимость участия</li>
+            </ul>
+          </nav>
+          <div class="header__social">
+            <a href="#" class="header__social-link">
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="14"
+                  fill="url(#paint0_linear_87_7225)"
+                />
+                <path
+                  d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_87_7225"
+                    x1="16"
+                    y1="2"
+                    x2="16"
+                    y2="30"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#37BBFE" />
+                    <stop offset="1" stop-color="#007DBB" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section flex hero">
+        <div class="flex container hero__content">
+          <div class="flex hero__content-left">
+            <h1 class="hero__title">
+              Практик транзактно-аналитического коучинга
+            </h1>
+            <div class="flex hero__descr">
+              <p class="hero__descr-coach">Тренер программы Илья Шмелев</p>
+              <p class="hero__descr-format">Формат: онлайн</p>
+              <p class="hero__descr-date">Старт 28-29 сентября 2024</p>
+            </div>
+            <button class="btn-reset btn hero__left-btn">ПРИНЯТЬ УЧАСТИЕ</button>
+          </div>
+          <div class="flex hero__content-right">
+            <button class="btn-reset btn hero__content-dwnl">
+              Скачать программу
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section promo">
+        <div class="container flex promo__content">
+          <video
+            controls
+            src="https://dl.dropboxusercontent.com/scl/fi/q8j69pl94u7x857q3qfoo/.mp4?rlkey=hj6qh8j4cwgetva1f65wz7rwp&st=7xrhmkec&dl=0"
+          ></video>
+        </div>
+      </section>
+
+      <section class="section forwhom">
+        <div class="container forwhom__content">
+          <h2 class="title2 forwhom__title">Тренинг для:</h2>
+          <ul class="list-reset flex forwhom__list">
+            <li class="flex forwhom__list-item">
+              <img
+                class="forwhom__list-item-img"
+                src="./img/forwhom-1.webp"
+                alt="Коуч"
+              />
+              <h3 class="forwhom__list-item-title">Коучей и психологов</h3>
+              <ul class="forwhom__list-item-list">
+                <li>Инструменты для работы с клиентами</li>
+                <li>Сертификат</li>
+              </ul>
+            </li>
+            <div class="line"></div>
+            <li class="flex forwhom__list-item">
+              <img
+                class="forwhom__list-item-img"
+                src="./img/forwhom2.webp"
+                alt="Коуч"
+              />
+              <h3 class="forwhom__list-item-title">Консультантов и тренеров</h3>
+              <ul class="forwhom__list-item-list">
+                <li>Инструменты для работы с клиентами</li>
+                <li>Сертификат</li>
+              </ul>
+            </li>
+            <div class="line"></div>
+            <li class="flex forwhom__list-item">
+              <img
+                class="forwhom__list-item-img"
+                src="./img/forwhom-3.webp"
+                alt="Консультан"
+              />
+              <h3 class="forwhom__list-item-title">Тех, кто развивается</h3>
+              <ul class="forwhom__list-item-list">
+                <li>Технологии для работы с собой</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bern">
+        <div class="container bern__content">
+          <blockquote class="text-xl italic text-gray-700">
+            “Чаще всего детские решения, а не сознательное планирование в зрелом
+            возрасте определяют судьбу человека”
+          </blockquote>
+          <footer class="mt-4 text-gray-500">— Э. Берн</footer>
+        </div>
+      </section>
+
+			<section class="value">
+				<div class="container  value__content">
+					<h2 class="title2 value__title">
+							В&nbsp;чем ценность этого курса для вас:
+						</h2>
+
+					<div class="flex value__content">
+
+					
+					<div class="value__content-left">	
+						<ul class="list-reset flex value__list">
+							<li class="value__list-item">
+								Получите самые необходимые в&nbsp;работе инструменты использования&nbsp;ТА в&nbsp;лайфкоучинге и&nbsp;организационном консультировании: ТА&nbsp;диагностика, модели и&nbsp;инструменты работы с&nbsp;коучи, командами и&nbsp;организациями.
+							</li>
+							<li class="value__list-item">
+								Научитесь диагностировать &laquo;боли&raquo; и&nbsp;&laquo;потребности&raquo; коучи.
+							</li>
+							<li class="value__list-item">
+								Получите целостную систему анализа человеческих отношений на&nbsp;уровне личности, групп, организаций.
+							</li>
+							<li class="value__list-item">
+								Пройдете самодиагностику и&nbsp;поймете, какие сценарии управляют вашей жизнью, жизнью команды и&nbsp;организации. Научитесь трансформировать сценарные паттерны, исходя из&nbsp;осознанных целей и&nbsp;поставленных задач.
+							</li>
+							<li class="value__list-item">
+								Повысите результативность в&nbsp;работе с&nbsp;коучи, командами, организациями.
+							</li>
+							<li class="value__list-item">
+								Сможете внедрить в&nbsp;свою жизнь и&nbsp;работу c&nbsp;организациями, командами полученные, модели, техники и&nbsp;инструменты
+							</li>
+							<li class="value__list-item">
+								Овладев практическими инструментами, Вы&nbsp;сможете повысить стоимость своих услуг.
+							</li>
+						</ul>
+						<button class="btn-reset btn value__btn">ПРИНЯТЬ УЧАСТИЕ</button>
+
+					</div>
+					<div class="value__content-right">
+            <picture >
+              <source srcset="./img/value-1.jpeg" media="(max-width: 900px)">
+              <img class="value__img"src="./img/value-2.jpeg" alt="Список с ценностями">
+            </picture>
+					</div>
+					</div>
+				</div>
+			</section>
+
+    </main>
+  </body>
+</html>
