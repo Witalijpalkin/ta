@@ -86,10 +86,29 @@
   display: none;
 }
 
+.bern__content {
+	width: 90%
+
+}
+
+.value__content-left {
+  margin-bottom: 30px;
+}
+
 		.value__content-right {
   display: block;
+	max-width: 100%;
 }
 .value__img {
 	object-fit: cover;
 }
+
+.goals {
+background: url(../img/desc.webp) no-repeat;
+}
+
+.goals__list-item-img {
+  max-width: 30%;
+}
+
 }

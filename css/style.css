@@ -53,47 +53,46 @@ p {
 :root {
   --black: #000000;
   --mineShaft: #333333;
-  --Silver: #CACACA;
-  --Gallery: #ECECEC;
-  --white: #FFFFFF;
+  --Silver: #cacaca;
+  --Gallery: #ececec;
+  --white: #ffffff;
   --redTree: #c42200;
   --yellow: #cea000;
   --swissCoffee: #d4cece;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('Open Sans Regular'), local('OpenSansRegular'),
-    url('../fonts/OpenSansRegular.woff2') format('woff2'),
-    url('../fonts/OpenSansRegular.woff') format('woff');
+  font-family: "OpenSans";
+  src: local("Open Sans Regular"), local("OpenSansRegular"),
+    url("../fonts/OpenSansRegular.woff2") format("woff2"),
+    url("../fonts/OpenSansRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('Open Sans SemiBold'), local('OpenSansSemiBold'),
-    url('../fonts/OpenSansSemiBold.woff2') format('woff2'),
-    url('../fonts/OpenSansSemiBold.woff') format('woff');
+  font-family: "OpenSans";
+  src: local("Open Sans SemiBold"), local("OpenSansSemiBold"),
+    url("../fonts/OpenSansSemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSansSemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('Open Sans Bold'), local('OpenSansBold'),
-    url('../fonts/OpenSansBold.woff2') format('woff2'),
-    url('../fonts/OpenSansBold.woff') format('woff');
+  font-family: "OpenSans";
+  src: local("Open Sans Bold"), local("OpenSansBold"),
+    url("../fonts/OpenSansBold.woff2") format("woff2"),
+    url("../fonts/OpenSansBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-
 body {
-  font-family: 'OpenSans', sans-serif;
+  font-family: "OpenSans", sans-serif;
 }
 
 .container {
@@ -114,7 +113,7 @@ body {
   border-radius: 20px;
   padding: 15px 40px;
   background-color: var(--redTree);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
@@ -126,52 +125,48 @@ body {
   margin-bottom: 50px;
   font-size: 42px;
   font-weight: 600;
-
 }
 
 .header {
-	width: 100%;
-	align-items: center;
-	background-color: rgb(0, 0, 0, 0.5);
-	position: fixed;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: fixed;
   z-index: 2;
-	height: 70px;
+  height: 70px;
 }
 
 .header__container {
-	max-width: 1200px;
-	
-	flex: 1;
-	margin: 0 auto;
-	padding: 0 20px;
+  max-width: 1200px;
+
+  flex: 1;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header__content {
-	justify-content: space-between;
-	align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__social-link {
-	max-width: 20px;
+  max-width: 20px;
 }
 
-
-
 .header__nav-list {
-	color: white;
-	gap: 20px;
+  color: white;
+  gap: 20px;
 }
 
 /*HERO*/
 
 .hero {
-	width: 100%;
-	align-items: center;
-	height: 100vh;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
   background: url(../img/fon_hero-1.jpg) center no-repeat;
   background-size: cover;
 }
-
 
 .hero__content-left {
   padding-top: 70px;
@@ -193,7 +188,6 @@ body {
 }
 
 .hero__left-btn {
-
 }
 
 .hero__content-right {
@@ -203,14 +197,14 @@ body {
 
 .hero__content-dwnl {
   align-self: center;
-  
+
   font-size: 16px;
   color: var(--redTree);
-  padding: 15px 70px 15px 40px ;
+  padding: 15px 70px 15px 40px;
   outline: 3px solid var(--redTree);
   border-radius: 20px;
-  background: right 50% / 25% 70% url(../img/pdf-155498.svg) no-repeat ;
-  transition: all .2s ease-in-out;
+  background: right 50% / 25% 70% url(../img/pdf-155498.svg) no-repeat;
+  transition: all 0.2s ease-in-out;
 }
 
 .hero__content-dwnl:hover {
@@ -220,7 +214,6 @@ body {
 }
 
 /*PROMO*/
-
 
 .promo__content {
   justify-content: center;
@@ -238,13 +231,11 @@ body {
 }
 
 .forwhom__list-item {
+  flex: 1;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  
 }
-
-
 
 .line::after {
   content: "";
@@ -254,13 +245,11 @@ body {
   height: 200px;
   background: var(--mineShaft);
   opacity: 0.1;
-
 }
 
-.forwhom__list-item-img{
+.forwhom__list-item-img {
   width: 120px;
 }
-
 
 /*Берн*/
 
@@ -272,7 +261,7 @@ body {
 
 .bern__content {
   position: relative;
-  width: 40%;
+  width: 70%;
   align-self: center;
 }
 
@@ -318,3 +307,35 @@ body {
 .value__content-right {
   max-width: 50%;
 }
+
+
+/*GOALS */
+
+.goals {
+  position: relative;
+  background: url(../img/goals.webp) no-repeat;
+  object-fit: cover;
+  color: white;
+  z-index: 0;
+}
+.goals::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:  #000;
+  opacity: .6;
+  border-radius: 15px;
+  position: absolute;
+  z-index: -1;
+}
+
+.goals__list-item-descr {
+  padding: 10px;
+}
+
+.goals__list-item-img {
+  max-width: 60%;
+}
+
