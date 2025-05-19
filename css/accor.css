@@ -1,0 +1,45 @@
+.accordion-button::after {
+  background-image: url('твоя-иконка.svg'); /* или none */
+  transform: rotate(90deg);
+}
+
+.accordion {
+    --bs-accordion-bg: transparent;
+}
+.accordion-button {
+  background-color: transparent;
+  padding: 15px 0;
+  background-image: right ;
+
+
+  /*color: white;*/
+}
+
+ button:first-of-type {
+  border-bottom: 1px solid #fff;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  /*color: #fff;*/
+}
+
+.accordion-button:focus {
+  outline: none;
+}
+
+.accordion-body {
+  /*background-color: transparent;*/
+  /*color: #333;*/
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}

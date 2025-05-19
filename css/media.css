@@ -59,6 +59,12 @@
 .value__content-left {
   width: 100%;
 }
+
+.schedule__list-item {
+  width: 40%;
+}
+
+
 }
 
 
@@ -109,6 +115,11 @@ background: url(../img/desc.webp) no-repeat;
 
 .goals__list-item-img {
   max-width: 30%;
+}
+
+
+.schedule__list-item {
+  width: 100%;
 }
 
 }

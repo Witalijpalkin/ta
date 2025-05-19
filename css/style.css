@@ -314,7 +314,7 @@ body {
 .goals {
   position: relative;
   background: url(../img/goals.webp) no-repeat;
-  object-fit: cover;
+  background-size: cover;
   color: white;
   z-index: 0;
 }
@@ -337,5 +337,68 @@ body {
 
 .goals__list-item-img {
   max-width: 60%;
+}
+
+
+/*SCHEDULE*/
+
+
+.schedule__descr {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.schedule__list {
+  flex-wrap: wrap;
+  gap: 25px 25px;
+}
+
+.schedule__list-item {
+  width: calc(33.333% - 40px);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+}
+
+.schedule__list-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.schedule__list-item * {
+  margin-bottom: 15px;
+}
+
+.timeblock {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*.list-item__title {
+  margin-bottom: 15px;
+}*/
+
+.list-item__descr {
+  line-height: 1.4;
+}
+
+
+
+.program {
+  background-color: var(--swissCoffee);
+}
+
+.program__list-title {
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.35;
+  display: inline-block; /* важно! нужно, чтобы трансформ работал адекватно */
+  transition: transform 0.2s ease;
+}
+
+.program__list-title:hover {
+  transform: scale(101%);
 }
 
