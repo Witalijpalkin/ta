@@ -1,6 +1,6 @@
 @media (max-width: 1100px) {
   .container {
-    padding: 30px 10px;
+    padding: 30px 15px;
   }
 
   .bern__content {
@@ -59,12 +59,13 @@
     padding: 10px 30px;
   }
 
+  .title2 {
+    margin-bottom: 25px;
+  }
+
   .hidden {
       display: block;
     }
-
-
-
 
   .menu-toggle {
     display: block;
@@ -72,6 +73,7 @@
 
   .h_nav {
     display: none;
+    /*visibility: hidden;*/
     margin-left: auto;
     flex-direction: column;
     background-color: #fff;
@@ -83,8 +85,11 @@
     box-shadow: 0 8px 8px rgba(0,0,0,0.1);
     z-index: 100;
     height: 300px;
-    transition: all .3s ease-in-out;
+    /*transform: translateX(110%);*/
+    /*transition: all .3s ease-in-out;*/
   }
+
+
 
   .h_nav-list {
     flex-direction: column;
@@ -94,6 +99,10 @@
 
   .h_nav-link {
     color: black;
+  }
+
+  .hero__content {
+    padding-left: 30px;
   }
 
 
@@ -146,4 +155,12 @@
   .schedule__list-item {
     width: 100%;
   }
+
+
+  .program__list-title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+
 }
