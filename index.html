@@ -18,17 +18,28 @@
     <!--<script src="https://cdn.tailwindcss.com"></script>-->
   </head>
   <body>
-    <header class="flex header">
-      <div class="header__container">
-        <div class="flex header__content">
-          <nav class="flex header__nav">
-            <ul class="flex list-reset header__nav-list">
-              <li>Программа</li>
-              <li>Отзывы</li>
-              <li>Тренер</li>
-              <li>Стоимость участия</li>
+    <div class="first">
+<button class="btn-reset menu-toggle" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="flex h_nav">
+            <ul class="flex list-reset h_nav-list">
+              <li class="h_nav-item"><a href="#program" class="h_nav-link">Программа</a> </li>
+              <li class="h_nav-item"><a href="#" class="h_nav-link">Отзывы</a> </li>
+              <li class="h_nav-item"><a href="#" class="h_nav-link">Тренер</a> </li>
+              <li class="h_nav-item"><a href="#" class="h_nav-link">Стоимость участия</a></li>
+              <li class="h_nav-item hidden"><a href="./files/programm.pdf" download class="h_nav-link">Скачать программу</a></li>
             </ul>
           </nav>
+    </div>
+
+    <header class="flex header">
+      <div class="header__container">
+
+
+        <div class="flex header__content">
           <div class="header__social">
             <a href="#" class="header__social-link">
               <svg
@@ -84,9 +95,9 @@
             </button>
           </div>
           <div class="flex hero__content-right">
-            <button class="btn-reset btn hero__content-dwnl">
-              Скачать программу
-            </button>
+            <a href="./files/programm.pdf" download class="btn-reset btn hero__content-dwnl">
+               Скачать программу
+            </a>
           </div>
         </div>
       </section>
@@ -123,7 +134,7 @@
                 src="./img/forwhom2.webp"
                 alt="Коуч"
               />
-              <h3 class="forwhom__list-item-title">Консультантов и тренеров</h3>
+              <h3 class="forwhom__list-item-title">Консультантов и&nbsp;тренеров</h3>
               <ul class="forwhom__list-item-list">
                 <li>Инструменты для работы с клиентами</li>
                 <li>Сертификат</li>
@@ -375,7 +386,7 @@
         </div>
       </section>
 
-      <section class="section program">
+      <section class="section program" id="program">
         <div class="container program__content">
           <h2 class="title2 program__title">Программа курса</h2>
           <div class="accordion" id="accordionExample">

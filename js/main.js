@@ -1,15 +1,32 @@
 
-  const toggles = document.querySelectorAll('.accordion__toggle');
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.h_nav');
+  const isMobile = window.innerWidth <= 560;
 
-  toggles.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      const item = toggle.parentElement;
-      const isActive = item.classList.contains('active');
+    toggle.addEventListener('click', (e) => {
+      toggle.classList.toggle('burger--active');
+      e.stopPropagation();
+      if (menu.style.display === 'none' || !menu.style.display) {
+        menu.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // при открытии
 
-      document.querySelectorAll('.accordion__item').forEach(i => i.classList.remove('active'));
-
-      if (!isActive) {
-        item.classList.add('active');
+      } else {menu.style.display = 'none';
+              document.body.style.overflow = '';
       }
     });
-  });
+
+    document.addEventListener('click', (e) => {
+      if (isMobile && menu.style.display === 'block' && !menu.contains(e.target)) {
+        menu.style.display = 'none';
+        document.body.style.overflow = '';
+        toggle.classList.remove('burger--active');
+      }
+    })
+
+    document.addEventListener('keydown', (e) => {
+  if (isMobile && e.key === 'Escape') {
+    menu.style.display = 'none';
+    document.body.style.overflow = '';
+    toggle.classList.remove('burger--active')
+  }
+});
