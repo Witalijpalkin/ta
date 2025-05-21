@@ -162,5 +162,7 @@
     line-height: 24px;
   }
 
-
+  .swiper-slide {
+    width: 100%;
+  }
 }

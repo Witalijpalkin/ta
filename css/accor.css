@@ -30,3 +30,5 @@
 .accordion-button:not(.collapsed)::after {
   display: none;
 }
+
+

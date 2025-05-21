@@ -500,3 +500,47 @@ position: relative;
   transform: scale(101%);
 }
 
+
+/*REVIEWS*/
+
+.reviews__content {
+  min-width: 1600px;
+}
+
+
+
+.swiper-wrapper {
+  align-items: stretch; /* чтобы растягивать слайды на одинаковую высоту */
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: azure;
+  width: 440px;
+  padding: 15px;
+}
+
+.swiper__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.swiper__content-top {
+  max-height: 600px;
+  margin-bottom: 15px;
+  overflow-y: auto;
+}
+
+.swiper__content-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-top: 3px solid var(--redTree);
+
+}
+

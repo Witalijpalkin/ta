@@ -42,15 +42,16 @@
 
 
 new Swiper('.swiper', {
-  slidesPerView: 3, // Показывать 3 карточки одновременно
+  slidesPerView: 'auto', // Показывать 3 карточки одновременно
   spaceBetween: 20,
+  centeredSlides: false,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-  breakpoints: {
-    768: { slidesPerView: 2 },
-    576: { slidesPerView: 1 },
-  }
+  //breakpoints: {
+  //  768: { slidesPerView: 2 },
+  //  576: { slidesPerView: 1 },
+  //}
 });
