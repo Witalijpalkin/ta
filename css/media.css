@@ -166,6 +166,10 @@
     width: 380px;
     padding: 10px;
   }
+
+  .swiper__content-top {
+    min-height: 450px;
+  }
 }
 
 @media (max-width: 391px) {
