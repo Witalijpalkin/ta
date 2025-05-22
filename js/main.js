@@ -43,7 +43,7 @@
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 'auto', // Показывать 3 карточки одновременно
-  spaceBetween: 20,
+  spaceBetween: 30,
   centeredSlides: true,
   loop: true,
   pagination: {

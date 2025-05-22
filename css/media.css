@@ -168,12 +168,12 @@
   }
 
   .swiper__content-top {
-    min-height: 450px;
+    max-height: 380px;
   }
 }
 
 @media (max-width: 391px) {
   .swiper-slide {
-      width: 330px;
+      max-width: 330px;
     }
 }

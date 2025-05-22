@@ -254,6 +254,8 @@ position: relative;
 
 /*HERO*/
 
+
+
 .hero {
   width: 100%;
   align-items: center;
@@ -317,7 +319,9 @@ position: relative;
   width: 100%;
 }
 
+
 /*For whom?*/
+
 
 .forwhom {
   padding-bottom: 120px;
@@ -411,6 +415,7 @@ position: relative;
 
 /*GOALS */
 
+
 .goals {
   position: relative;
   background: url(../img/goals.webp) no-repeat;
@@ -475,15 +480,9 @@ position: relative;
   margin-bottom: 5px;
 }
 
-/*.list-item__title {
-  margin-bottom: 15px;
-}*/
-
 .list-item__descr {
   line-height: 1.4;
 }
-
-
 
 .program {
   background-color: var(--swissCoffee);
@@ -505,11 +504,10 @@ position: relative;
 
 /*REVIEWS*/
 
+
 .reviews__content {
   max-width: 1600px;
 }
-
-
 
 .swiper-wrapper {
   align-items: stretch; /* чтобы растягивать слайды на одинаковую высоту */
@@ -518,10 +516,10 @@ position: relative;
 .swiper-slide {
   display: flex;
   flex-direction: column;
-    align-items: center;
+  align-items: center;
   height: auto;
   background-color: var(--swissCoffee);
-  width: 440px;
+  max-width: 440px;
   padding: 15px;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -554,7 +552,7 @@ position: relative;
   position: relative;
   height: 100%;
   width: 100%;
-  /*max-width: 360px; или нужная ширина*/
+  max-width: 360px;
   aspect-ratio: 9 / 16; /* вертикальное видео */
   margin: 0 auto; /* центрирование */
   overflow: hidden;
@@ -571,6 +569,7 @@ position: relative;
 .swiper__content-top::-webkit-scrollbar {
   width: 8px;
 }
+
 .swiper__content-top::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
@@ -583,4 +582,36 @@ position: relative;
 
 .swiper__content-top::-webkit-scrollbar-thumb:hover {
   background: var(--yellow);
+}
+
+
+/*COACH*/
+
+.coach__container {
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.coach-left {
+  max-width: 45%;
+}
+
+.coach__right {
+  flex-direction: column;
+  align-items: center;
+}
+
+.coach__title {
+  margin-bottom: 20px;
+}
+
+.coach__right-line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--Silver);
+}
+
+.coach__right-article {
+    font-size: 20px;
+    line-height: 1.55;
 }
