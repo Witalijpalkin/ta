@@ -163,7 +163,13 @@
   }
 
   .swiper-slide {
-    width: 410px;
+    width: 380px;
     padding: 10px;
   }
+}
+
+@media (max-width: 391px) {
+  .swiper-slide {
+      width: 330px;
+    }
 }
