@@ -26,6 +26,7 @@
 
     .header__nav {
     display: none;
+    position: absolute;
     margin-left: auto;
     flex-direction: column;
     background-color: #fff;
@@ -54,6 +55,10 @@
 
   .menu-toggle {
     display: block;
+  }
+
+  .hero__title {
+    font-size: 35px;
   }
 
   .hero__content {
@@ -87,6 +92,16 @@
   .schedule__list-item {
     width: 40%;
   }
+
+  .coach__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coach-left {
+    max-width: 80%;
+  }
+
 }
 
 @media (max-width: 560px) {
@@ -99,11 +114,6 @@
     margin-bottom: 25px;
   }
 
-  .meni__link-hidden {
-      display: block;
-    }
-
-
   .hero__content {
     padding-left: 30px;
   }
@@ -114,8 +124,11 @@
   }
 
   .hero__title {
-    font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+
+  .hero__descr {
+    font-size: 20px;
   }
 
   .hero__content-dwnl {
@@ -179,4 +192,8 @@
   .swiper-slide {
       max-width: 330px;
     }
+
+    .coach-left {
+    max-width: 95%;
+  }
 }

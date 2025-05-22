@@ -96,6 +96,7 @@ p {
 
 body {
   font-family: "OpenSans", sans-serif;
+  position: relative;
 }
 
 .container {
@@ -261,14 +262,13 @@ position: relative;
   background-size: cover;
   /*transform: scaleY(-1);*/
 }
-
 .hero__content {
-  height: 100%;
+  height: 80%;
 }
 
 .hero__content-left {
 
-  padding-top: 70px;
+  padding-top: 30px;
   width: 70%;
   height: 70%;
   flex-direction: column;
@@ -607,6 +607,7 @@ position: relative;
 }
 
 .coach__right-line {
+  margin-bottom: 20px;
   width: 100px;
   height: 3px;
   background-color: var(--Silver);
@@ -615,4 +616,99 @@ position: relative;
 .coach__right-article {
     font-size: 20px;
     line-height: 1.55;
+}
+
+
+/*Pre-req*/
+
+
+.pre-req__content {
+  flex-direction: column;
+}
+
+.pre-req__descr {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.pre-req__descr-text {
+  text-align: center;
+}
+
+.timeline {
+
+  display: grid;
+  grid-template-columns: 25% 20px 1fr;
+  gap: 20px;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 15px;
+  bottom: 40px;
+  grid-column: 2;
+  background: #c42200;
+  width: 4px;
+  height: 70%;
+  z-index: -1;
+}
+
+.timeline__item {
+  display: contents;
+  justify-items: center;
+}
+
+.timeline__point {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2;
+  border-radius: 50%;
+  justify-self: center;
+  font-size: 26px;
+  height: 100%;
+}
+
+.timeline__point span {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  color: white;
+  background: var(--redTree);
+  border-radius: 50%;
+}
+
+.timeline__point span:first-child::after {
+  content: "1";
+  top: 0%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%) ;
+}
+/*.timeline__point span::after {
+  content: "1";
+  top: 0%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%) ;
+}*/
+.timeline__point span:last-child::after {
+  content: "3";
+  top: 0%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%) ;
+}
+
+
+
+.timeline__content {
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 8px;
 }

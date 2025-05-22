@@ -1,7 +1,7 @@
 
   const toggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.h_nav');
-  const menuLinks = document.querySelectorAll('.h_nav-link');
+  const menu = document.querySelector('.header__nav');
+  const menuLinks = document.querySelectorAll('.header__nav-link');
   const isMobile = window.innerWidth <= 800;
 
     toggle.addEventListener('click', (e) => {
