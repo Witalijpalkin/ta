@@ -1,8 +1,8 @@
 
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.h_nav');
-  const menuLink = document.querySelector('.h_nav-link');
-  const isMobile = window.innerWidth <= 560;
+  const menuLinks = document.querySelectorAll('.h_nav-link');
+  const isMobile = window.innerWidth <= 800;
 
     toggle.addEventListener('click', (e) => {
       toggle.classList.toggle('burger--active');
@@ -16,13 +16,16 @@
       }
     });
 
-    menuLink.addEventListener('click', () => {
-       if (isMobile) {
-        menu.style.display = 'none';
-        document.body.style.overflow = '';
-        toggle.classList.remove('burger--active');
-       }
+    menuLinks.forEach((menuLink) => {
+        menuLink.addEventListener('click', () => {
+        if (isMobile) {
+          menu.style.display = 'none';
+          document.body.style.overflow = '';
+          toggle.classList.remove('burger--active');
+        }
+      })
     })
+
 
     document.addEventListener('click', (e) => {
       if (isMobile && menu.style.display === 'block' && !menu.contains(e.target)) {

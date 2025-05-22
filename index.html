@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
     <title>Транзактный анализ</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link
@@ -22,26 +23,42 @@
     <!--<script src="https://cdn.tailwindcss.com"></script>-->
   </head>
   <body>
-    <div class="first">
-      <button class="btn-reset menu-toggle" aria-label="Меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="flex h_nav">
-        <ul class="flex list-reset h_nav-list">
-          <li class="h_nav-item"><a href="#program" class="h_nav-link">Программа</a></li>
-          <li class="h_nav-item"><a href="#reviews" class="h_nav-link">Отзывы</a></li>
-          <li class="h_nav-item"><a href="#coach" class="h_nav-link">Тренер</a></li>
-          <li class="h_nav-item"><a href="#price" class="h_nav-link">Стоимость участия</a></li>
-          <li class="h_nav-item hidden"><a href="./files/programm.pdf" download class="h_nav-link">Скачать программу</a></li>
-        </ul>
-      </nav>
-    </div>
-
     <header class="flex header">
       <div class="header__container">
         <div class="flex header__content">
+          <div class="header__menu">
+            <button class="btn-reset menu-toggle" aria-label="Меню">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="flex header__nav">
+              <ul class="flex list-reset header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#program" class="header__nav-link">Программа</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#reviews" class="header__nav-link">Отзывы</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#coach" class="header__nav-link">Тренер</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#price" class="header__nav-link"
+                    >Стоимость участия</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a
+                    href="./files/programm.pdf"
+                    download
+                    class="header__nav-link"
+                    >Скачать программу</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="header__social">
             <a href="#" class="header__social-link">
               <svg
@@ -96,7 +113,7 @@
               ПРИНЯТЬ УЧАСТИЕ
             </button>
           </div>
-          <div class="flex hero__content-right">
+          <!--<div class="flex hero__content-right">
             <a
               href="./files/programm.pdf"
               download
@@ -104,7 +121,7 @@
             >
               Скачать программу
             </a>
-          </div>
+          </div>-->
         </div>
       </section>
 
@@ -166,11 +183,14 @@
 
       <section class="bern">
         <div class="container bern__content">
-          <blockquote class="text-xl italic text-gray-700">
-            “Чаще всего детские решения, а не сознательное планирование в зрелом
-            возрасте определяют судьбу человека”
-          </blockquote>
-          <footer class="mt-4 text-gray-500">— Э. Берн</footer>
+          <div class="bern__cite">
+            <blockquote class="text-xl italic text-gray-700">
+              “Чаще всего детские решения, а не сознательное планирование в зрелом
+              возрасте определяют судьбу человека”
+            </blockquote>
+            <footer class="mt-4 text-gray-500">— Э. Берн</footer>
+          </div>
+
         </div>
       </section>
 
@@ -328,7 +348,7 @@
               <h3 class="list-item__title">Модуль 3.</h3>
               <p class="list-item__descr">
                 Продвинутые техники транзактного анализа в&nbsp;лайфкоучинге.
-                Часть&nbsp;2
+                <span>Часть&nbsp;2</span>
               </p>
               <p>
                 <b>Даты проведения:</b>
@@ -411,9 +431,9 @@
                   <span class="program__list-title">
                     Модуль&nbsp;1. Базовые техники транзактного анализа
                     в&nbsp;лайфкоучинге и&nbsp;организационном
-                    консультировании.</span>
-                    <!--<span class="program__list-icon"></span>-->
-
+                    консультировании.</span
+                  >
+                  <!--<span class="program__list-icon"></span>-->
                 </button>
               </h2>
               <div
@@ -612,9 +632,9 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  <span class="program__list-title"
-                    >Модуль 3. Продвинутые техники транзактного анализа в
-                    лайфкоучинге. Часть 2</span
+                  <span class="program__list-title">
+                    Продвинутые техники транзактного анализа
+                    в&nbsp;лайфкоучинге. Часть&nbsp;2</span
                   >
                 </button>
               </h2>
@@ -942,7 +962,7 @@
                   <p class="swiper__content-top">
                     Ценность курса как минимум троекратно превышает его
                     стоимость! Благодарю за&nbsp;атмосферу и&nbsp;созданную
-                    среду, за&nbsp;чуткое сопровождение Лилии Ураевой.<br><br>
+                    среду, за&nbsp;чуткое сопровождение Лилии Ураевой.<br /><br />
                     Это первый мой курс из&nbsp;которого я&nbsp;применяю
                     абсолютно все данные техники. Все очень
                     <strong
@@ -960,19 +980,20 @@
                     быть очень личным. Я&nbsp;как-то очень рьяно работала,
                     отрабатывала глубоко и&nbsp;честно, и&nbsp;поэтому получила
                     неожиданный результат для себя. Очень много изменения
-                    во&nbsp;внутренних настройках :)<br><br> Это повлекло полную
-                    перестройку моих ценностей и&nbsp;открыло вопросы,
-                    на&nbsp;которые мне ещё только предстоит найти ответы.
-                    Но&nbsp;я&nbsp;знаю точно, что этот, пусть
-                    и&nbsp;не&nbsp;самый комфортный процесс, однозначно полезный
-                    и&nbsp;освобождающий для меня. Могу сказать, что курс сильно
-                    продвинул меня в&nbsp;коучинговой практике, в&nbsp;том, как
-                    я&nbsp;работаю как коуч с&nbsp;клиентами.<br><br> Поэтому
-                    я&nbsp;считаю этот курс максимально полезным для каждого
-                    коуча, для каждого, кто работает как консультант
+                    во&nbsp;внутренних настройках :)<br /><br />
+                    Это повлекло полную перестройку моих ценностей
+                    и&nbsp;открыло вопросы, на&nbsp;которые мне ещё только
+                    предстоит найти ответы. Но&nbsp;я&nbsp;знаю точно, что этот,
+                    пусть и&nbsp;не&nbsp;самый комфортный процесс, однозначно
+                    полезный и&nbsp;освобождающий для меня. Могу сказать, что
+                    курс сильно продвинул меня в&nbsp;коучинговой практике,
+                    в&nbsp;том, как я&nbsp;работаю как коуч с&nbsp;клиентами.<br /><br />
+                    Поэтому я&nbsp;считаю этот курс максимально полезным для
+                    каждого коуча, для каждого, кто работает как консультант
                     с&nbsp;клиентами. Было&nbsp;бы круто, если&nbsp;бы
                     супервизии по&nbsp;ТА стали чем-то вроде отдельного продукта
-                    :) Куда можно было&nbsp;бы продолжать приносить свои кейсы.<br><br>
+                    :) Куда можно было&nbsp;бы продолжать приносить свои
+                    кейсы.<br /><br />
                     Держу в&nbsp;голове мысль, которая зародилась у&nbsp;меня
                     ещё на&nbsp;обучении, что я&nbsp;<strong
                       >хочу пройти его снова</strong
@@ -1017,24 +1038,30 @@
                 <div class="swiper__content flex">
                   <p class="swiper__content-top">
                     Проходила курс &laquo;Транзактный анализ
-                    в&nbsp;коучинге&raquo; с&nbsp;тренером Шмелевым Ильей.<br><br>
+                    в&nbsp;коучинге&raquo; с&nbsp;тренером Шмелевым Ильей.<br /><br />
                     В&nbsp;курсе много понятных техник, которые помогают
-                    работать с&nbsp;клиентами более эффективно.<strong>Если раньше
-                    уходили на&nbsp;какие-то процессы две три сессии, сейчас
-                    с&nbsp;помощью техник транзактного анализа&nbsp;&mdash;
-                    одна.</strong> <br><br> Знания&nbsp;полученные на&nbsp;курсе
-                    помогают довольно быстро определить в&nbsp;каком состоянии
-                    клиент находится и&nbsp;что не&nbsp;хватает для того, чтобы
-                    жизнь стала более гармоничной и&nbsp;что действительно
-                    поможет достигать желаемого.<br><br> Тренер делится также
-                    практическими знаниями и&nbsp;нюансами в&nbsp;работе, что
-                    особо ценно для практикующих специалистов. Супервизии
-                    на&nbsp;курсе рекомендую проходить все!<br><br> Знания в&nbsp;работе
-                    со&nbsp;сценариями и&nbsp;как из&nbsp;них выходить поможет
-                    как для личной жизни и&nbsp;самокоучинга, так и&nbsp;для
-                    выстраивания стратегии работы с&nbsp;клиентом.<br><br> Рекомендую
-                    курс для всех, кто хочет развиваться в&nbsp;профессии
-                    и&nbsp;уметь работать с&nbsp;собой и&nbsp;своим состоянием.
+                    работать с&nbsp;клиентами более эффективно.<strong
+                      >Если раньше уходили на&nbsp;какие-то процессы две три
+                      сессии, сейчас с&nbsp;помощью техник транзактного
+                      анализа&nbsp;&mdash; одна.</strong
+                    >
+                    <br /><br />
+                    Знания&nbsp;полученные на&nbsp;курсе помогают довольно
+                    быстро определить в&nbsp;каком состоянии клиент находится
+                    и&nbsp;что не&nbsp;хватает для того, чтобы жизнь стала более
+                    гармоничной и&nbsp;что действительно поможет достигать
+                    желаемого.<br /><br />
+                    Тренер делится также практическими знаниями и&nbsp;нюансами
+                    в&nbsp;работе, что особо ценно для практикующих
+                    специалистов. Супервизии на&nbsp;курсе рекомендую проходить
+                    все!<br /><br />
+                    Знания в&nbsp;работе со&nbsp;сценариями и&nbsp;как
+                    из&nbsp;них выходить поможет как для личной жизни
+                    и&nbsp;самокоучинга, так и&nbsp;для выстраивания стратегии
+                    работы с&nbsp;клиентом.<br /><br />
+                    Рекомендую курс для всех, кто хочет развиваться
+                    в&nbsp;профессии и&nbsp;уметь работать с&nbsp;собой
+                    и&nbsp;своим состоянием.
                   </p>
                   <p class="swiper__content-bottom">
                     Войнова Ольга, сертифицированный коуч ICU.
@@ -1046,9 +1073,13 @@
                   <p class="swiper__content-top">
                     Прекрасный курс! Одно из&nbsp;лучших обучений. Добавило
                     много понимания в&nbsp;работе с&nbsp;клиентами, хорошо
-                    дополнило основное коучинговое образование.<br><br> Работаю только
-                    в&nbsp;этом подходе с&nbsp;клиентами. За&nbsp;время обучения <strong>и&nbsp;собственная жизнь претерпела изменения в&nbsp;лучшую
-                    сторону</strong>.<br><br>
+                    дополнило основное коучинговое образование.<br /><br />
+                    Работаю только в&nbsp;этом подходе с&nbsp;клиентами.
+                    За&nbsp;время обучения
+                    <strong
+                      >и&nbsp;собственная жизнь претерпела изменения
+                      в&nbsp;лучшую сторону</strong
+                    >.<br /><br />
                     Очень много ясности внесло в&nbsp;жизнь. Благодарю
                     за&nbsp;прекрасный курс. Всем рекомендую!
                   </p>
@@ -1062,12 +1093,16 @@
                   <p class="swiper__content-top">
                     Курс уникальный. Соединение транзактного анализа
                     и&nbsp;коучинга для меня оказалось идеальным сочетанием.
-                    Интересно, понятно, позитивно.<br><br> Каждый урок ждала
-                    с&nbsp;нетерпением. Илья создавал невероятную атмосферу.
-                    Супер профессионал и&nbsp;очень внимательный преподаватель.<br><br>
-                    Много практики в&nbsp;процессе проработок,<strong>даже сложные
-                    вещи объяснял очень легко и&nbsp;доступно</strong> .<br><br> Благодарю
-                    и&nbsp;буду ждать других курсов с&nbsp;Ильей.
+                    Интересно, понятно, позитивно.<br /><br />
+                    Каждый урок ждала с&nbsp;нетерпением. Илья создавал
+                    невероятную атмосферу. Супер профессионал и&nbsp;очень
+                    внимательный преподаватель.<br /><br />
+                    Много практики в&nbsp;процессе проработок,<strong
+                      >даже сложные вещи объяснял очень легко
+                      и&nbsp;доступно</strong
+                    >
+                    .<br /><br />
+                    Благодарю и&nbsp;буду ждать других курсов с&nbsp;Ильей.
                   </p>
                   <p class="swiper__content-bottom">
                     Наталия, брокер, психолог.
@@ -1078,14 +1113,15 @@
                 <div class="swiper__content flex">
                   <div class="swiper__content-top">
                     <div class="video-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/Yr87tdL9_00"
-                  title="YouTube video"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-                </iframe>
-              </div>
+                      <iframe
+                        src="https://www.youtube.com/embed/Yr87tdL9_00"
+                        title="YouTube video"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      >
+                      </iframe>
+                    </div>
                   </div>
                   <p class="swiper__content-bottom">
                     Евгения Мельниковская, руководитель, коуч.
@@ -1098,14 +1134,17 @@
                     Курс обогатил мою практику работающими техниками
                     по&nbsp;убеждениям.<br /><br />
 
-                    <strong>Применение</strong> в&nbsp;работе Концепции жизненного сценария
-                    и&nbsp;концепции игр <strong>позволяет показывать клиенту его слепые
-                    пятна и&nbsp;приглашать к&nbsp;перерешению</strong>.<br /><br />
+                    <strong>Применение</strong> в&nbsp;работе Концепции
+                    жизненного сценария и&nbsp;концепции игр
+                    <strong
+                      >позволяет показывать клиенту его слепые пятна
+                      и&nbsp;приглашать к&nbsp;перерешению</strong
+                    >.<br /><br />
 
                     Работа коуча для меня теперь звучит глубже и&nbsp;позволяет
                     наблюдать качественное изменение пути клиента.
                   </p>
-                   <p class="swiper__content-bottom">
+                  <p class="swiper__content-bottom">
                     Гульмира, руководитель в банке, коуч.
                   </p>
                 </div>
@@ -1139,7 +1178,7 @@
                     становится меньше и&nbsp;сам, по-взрослому, можешь сделать
                     выводы.
                   </p>
-                   <p class="swiper__content-bottom">
+                  <p class="swiper__content-bottom">
                     Светлана, владелец бизнеса, коуч.
                   </p>
                 </div>
@@ -1294,22 +1333,29 @@
       <section class="section coach" id="coach">
         <div class="container flex coach__container">
           <div class="coach-left">
-            <img src="./img/team1.webp" alt="фото Илья Шмелёв">
+            <img src="./img/team1.webp" alt="фото Илья Шмелёв" />
           </div>
           <article class="flex coach__right">
             <h2 class="title2 coach__title">Илья Шмелев - тренер</h2>
             <div class="coach__right-line"></div>
             <div class="coach__right-article">
-              &bull; Старший преподаватель НИУ ВШЭ (магистерская программа &laquo;Консультативная психология. Персоналогия&raquo;, трек подготовки &laquo;Транзактный анализ. Мультипрофильное консультирование&raquo;)
-&bull; Мастер-тренер ICU<br>
-&bull; Кандидат психологических наук (PhD)<br>
-&bull; Сертифицированный бизнес-тренер международной категории<br>
-&bull; Certified Professional Master and Trainer of&nbsp;Coaching<br>
-&bull; Закончил международное обучение по&nbsp;транзактному анализу<br>.
-&bull; Тренерская и&nbsp;консультационная деятельность с&nbsp;2004&nbsp;года.<br>
-&bull; Соучредитель ООО &laquo;Коучинг Центр&raquo; (г.Москва)<br>
-&bull; Успешно проведено более 1200 тренингов и&nbsp;семинаров в&nbsp;более чем 10&nbsp;регионах России, странах СНГ, ЕС&nbsp;и&nbsp;др.<br>
-&bull; Соавтор колод коучинговых ассоциативных карт &laquo;КАК&raquo; и&nbsp;&laquo;Будущее&raquo;.
+              &bull; Старший преподаватель НИУ ВШЭ (магистерская программа
+              &laquo;Консультативная психология. Персоналогия&raquo;, трек
+              подготовки &laquo;Транзактный анализ. Мультипрофильное
+              консультирование&raquo;) &bull; Мастер-тренер ICU<br />
+              &bull; Кандидат психологических наук (PhD)<br />
+              &bull; Сертифицированный бизнес-тренер международной категории<br />
+              &bull; Certified Professional Master and Trainer
+              of&nbsp;Coaching<br />
+              &bull; Закончил международное обучение по&nbsp;транзактному
+              анализу<br />. &bull; Тренерская и&nbsp;консультационная
+              деятельность с&nbsp;2004&nbsp;года.<br />
+              &bull; Соучредитель ООО &laquo;Коучинг Центр&raquo; (г.Москва)<br />
+              &bull; Успешно проведено более 1200 тренингов и&nbsp;семинаров
+              в&nbsp;более чем 10&nbsp;регионах России, странах СНГ,
+              ЕС&nbsp;и&nbsp;др.<br />
+              &bull; Соавтор колод коучинговых ассоциативных карт
+              &laquo;КАК&raquo; и&nbsp;&laquo;Будущее&raquo;.
             </div>
           </article>
         </div>

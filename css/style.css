@@ -96,20 +96,12 @@ p {
 
 body {
   font-family: "OpenSans", sans-serif;
-  position: relative;
 }
 
 .container {
   max-width: 1200px;
   padding: 30px 30px;
   margin: 0 auto;
-  /*position: relative;*/
-}
-
-.hidden {
-  display: none;
-  background: url(../img/dwn.png) no-repeat right;
-  background-size: contain;
 }
 
 .section {
@@ -149,6 +141,7 @@ body {
 .menu-toggle {
   display: none;
   position: fixed;
+  padding: 15px;
   height: 25px;
   width: 25px;
   top: 20px;
@@ -158,8 +151,10 @@ body {
 
 .menu-toggle span{
   position: absolute;
+  left: 3px;
   width: 25px;
-  height: 3px;
+  height: 4px;
+  border-radius: 25%;
   background-color: #fff;
   transition: all .3s ease-in-out;
 }
@@ -167,7 +162,7 @@ body {
   top: 5px;
 }
 .menu-toggle span:last-child {
-  top: 20px;
+  top: 25px;
 }
 
 .burger--active span:first-child {
@@ -182,8 +177,8 @@ body {
   display: none;
 }
 
-.h_nav {
-  position: fixed;
+.header__nav {
+  position: sticky;
   z-index: 1;
   height: 70px;
   align-items:center;
@@ -192,17 +187,19 @@ body {
 }
 
 
-.h_nav-item {
+.header__nav-item {
 position: relative;
   padding-bottom: 5px;
   z-index: 0;
 }
 
-.h_nav-link {
+
+
+.header__nav-link {
   color: white;
 }
 
-.h_nav-item::after {
+.header__nav-item::after {
   content: "";
   left: 0;
   bottom: 0;
@@ -215,7 +212,7 @@ position: relative;
   transition: all .2s ease-in-out;
 }
 
-.h_nav-item:hover:not(:focus-visible):after{
+.header__nav-item:hover:not(:focus-visible):after{
   opacity: 1;
   transform: scale(1);
 }
@@ -224,16 +221,16 @@ position: relative;
   max-width: 20px;
 }
 
-.h_nav-list {
+.header__nav-list {
   gap: 20px;
 }
 
 .header {
   width: 100%;
   align-items: center;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.7);
   position: fixed;
-  z-index: 0;
+  z-index: 10;
   height: 70px;
 }
 
@@ -246,7 +243,7 @@ position: relative;
 }
 
 .header__content {
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -262,28 +259,33 @@ position: relative;
   height: 100vh;
   background: url(../img/fon_hero-1.jpg) center no-repeat;
   background-size: cover;
+  /*transform: scaleY(-1);*/
+}
+
+.hero__content {
+  height: 100%;
 }
 
 .hero__content-left {
+
   padding-top: 70px;
-  width: 60%;
+  width: 70%;
+  height: 70%;
   flex-direction: column;
+  justify-content: space-between;
   color: var(--white);
 }
 
 .hero__title {
   font-size: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .hero__descr {
   font-size: 22px;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 40px;
-}
-
-.hero__left-btn {
+  gap: 5px;
+  margin-bottom: 15px;
 }
 
 .hero__content-right {
@@ -293,7 +295,6 @@ position: relative;
 
 .hero__content-dwnl {
   align-self: center;
-
   font-size: 16px;
   color: var(--redTree);
   padding: 15px 70px 15px 40px;
@@ -362,14 +363,14 @@ position: relative;
   z-index: -2;
 }
 
-.bern__content {
+.bern__cite {
   position: relative;
   width: 70%;
   align-self: center;
   /*z-index: -1;*/
 }
 
-.bern__content::before {
+.bern__cite::before {
   content: "";
   position: absolute;
   left: 0;
