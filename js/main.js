@@ -41,17 +41,22 @@
 });
 
 
-new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 'auto', // Показывать 3 карточки одновременно
   spaceBetween: 20,
-  centeredSlides: false,
+  centeredSlides: true,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+    navigation: {
+    nextEl: ".custom-next",
+    prevEl: ".custom-prev",
   },
   //breakpoints: {
   //  768: { slidesPerView: 2 },
   //  576: { slidesPerView: 1 },
   //}
 });
+

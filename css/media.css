@@ -163,6 +163,7 @@
   }
 
   .swiper-slide {
-    width: 100%;
+    width: 410px;
+    padding: 10px;
   }
 }

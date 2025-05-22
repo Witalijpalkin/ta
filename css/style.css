@@ -504,7 +504,7 @@ position: relative;
 /*REVIEWS*/
 
 .reviews__content {
-  min-width: 1600px;
+  max-width: 1600px;
 }
 
 
@@ -517,9 +517,12 @@ position: relative;
   display: flex;
   flex-direction: column;
   height: auto;
-  background-color: azure;
+  background-color: var(--swissCoffee);
   width: 440px;
   padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .swiper__content {
@@ -527,6 +530,7 @@ position: relative;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+  /*color: white;*/
 }
 
 .swiper__content-top {
@@ -539,8 +543,24 @@ position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  height: 50px;
   border-top: 3px solid var(--redTree);
-
 }
 
+.video-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /*max-width: 360px; или нужная ширина*/
+  aspect-ratio: 9 / 16; /* вертикальное видео */
+  margin: 0 auto; /* центрирование */
+  overflow: hidden;
+  border-radius: 12px; /* по желанию */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* по желанию */
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 90%;
+  border: none;
+}
