@@ -63,3 +63,56 @@ const swiper = new Swiper('.swiper', {
   //}
 });
 
+//const hideNav = () => {
+//  const headerHeight = 70;
+//  let initialYvalue = window.scrollY;
+//  let body = document.querySelector('body');
+//  let isFixed = false;
+
+//  window.addEventListener('scroll', (ev) => {
+//    const scrollY = window.scrollY;
+//    if (scrollY > headerHeight) {
+//      makeItFixed();
+//    } else {
+//      makeItNotFixed();
+//    }
+//  });
+
+//  function makeItFixed() {
+//    body.classList.add('header__hidden');
+//    isFixed = true;
+
+//  }
+//  function makeItNotFixed() {
+//    body.classList.remove('header__hidden');
+//    isFixed = false;
+//  }
+//}
+
+//hideNav();
+
+const header = document.querySelector('.header');
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > 70 && currentScroll > lastScrollY) {
+        // Прокрутка вниз
+        header.classList.add('header--fixed', 'header--visible');
+      } else if (currentScroll <= 70) {
+        // Вернулись наверх
+        header.classList.remove('header--fixed', 'header--visible');
+      }
+
+      lastScrollY = currentScroll;
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
+
