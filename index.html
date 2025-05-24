@@ -23,6 +23,26 @@
     <!--<script src="https://cdn.tailwindcss.com"></script>-->
   </head>
   <body>
+    <svg style="display: none;">
+<symbol id="akk-arrow" viewBox="0 0 314.065 314.064">
+  <g>
+    <g id="_x34_94._Forward">
+      <g>
+        <path d="M216.545,145.893l-44.374-44.368c-6.131-6.133-16.076-6.133-22.205,0h0.008c-6.129,6.121-6.129,16.068,0,22.197
+          l17.589,17.603h-65.485c-8.666,0-15.701,7.033-15.701,15.701v0.008c0,8.668,7.035,15.701,15.701,15.701h65.493l-17.597,17.601
+          c-6.129,6.132-6.129,16.069,0,22.201c6.122,6.136,16.066,6.136,22.197,0l44.41-44.402c6.128-6.127,6.128-16.078,0-22.209
+          C216.57,145.909,216.554,145.9,216.545,145.893z M235.533,21.057C160.438-22.291,64.414,3.433,21.063,78.521
+          c-43.356,75.096-17.633,171.119,57.464,214.483c75.087,43.353,171.119,17.625,214.476-57.47
+          C336.364,160.443,310.62,64.408,235.533,21.057z M265.801,219.83c-34.688,60.079-111.503,80.657-171.574,45.973
+          C34.158,231.118,13.565,154.304,48.25,94.229C82.932,34.151,159.756,13.567,219.828,48.25
+          C279.899,82.934,300.485,159.763,265.801,219.83z"/>
+      </g>
+    </g>
+  </g>
+</symbol>
+</svg>
+
+
     <header class="flex header">
       <div class="header__container">
         <div class="flex header__content">
@@ -38,6 +58,9 @@
                   <a href="#program" class="header__nav-link">Программа</a>
                 </li>
                 <li class="header__nav-item">
+                  <a href="#schedule" class="header__nav-link">Даты</a>
+                </li>
+                <li class="header__nav-item">
                   <a href="#reviews" class="header__nav-link">Отзывы</a>
                 </li>
                 <li class="header__nav-item">
@@ -45,10 +68,9 @@
                 </li>
                 <li class="header__nav-item">
                   <a href="#price" class="header__nav-link"
-                    >Стоимость участия</a
-                  >
+                    >Стоимость участия</a>
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item header__nav-item--dwnl">
                   <a
                     href="./files/programm.pdf"
                     download
@@ -87,7 +109,7 @@
                     y2="30"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#37BBFE" />
+                    <stop offset="0" stop-color="#37BBFE" />
                     <stop offset="1" stop-color="#007DBB" />
                   </linearGradient>
                 </defs>
@@ -113,26 +135,17 @@
               ПРИНЯТЬ УЧАСТИЕ
             </button>
           </div>
-          <!--<div class="flex hero__content-right">
-            <a
-              href="./files/programm.pdf"
-              download
-              class="btn-reset btn hero__content-dwnl"
-            >
-              Скачать программу
-            </a>
-          </div>-->
         </div>
       </section>
 
-      <section class="section promo">
+      <div class="section promo">
         <div class="container flex promo__content">
           <video
             controls
             src="https://dl.dropboxusercontent.com/scl/fi/q8j69pl94u7x857q3qfoo/.mp4?rlkey=hj6qh8j4cwgetva1f65wz7rwp&st=7xrhmkec&dl=0"
           ></video>
         </div>
-      </section>
+      </div>
 
       <section class="section forwhom">
         <div class="container forwhom__content">
@@ -142,57 +155,53 @@
               <img
                 class="forwhom__list-item-img"
                 src="./img/forwhom-1.webp"
-                alt="Коуч"
-              />
+                alt="Коуч">
               <h3 class="forwhom__list-item-title">Коучей и психологов</h3>
               <ul class="forwhom__list-item-list">
-                <li>Инструменты для работы с клиентами</li>
-                <li>Сертификат</li>
+                <li class="section-descr">Инструменты для работы с клиентами</li>
+                <li class="section-descr">Сертификат</li>
               </ul>
             </li>
-            <div class="line"></div>
+
             <li class="flex forwhom__list-item">
               <img
                 class="forwhom__list-item-img"
                 src="./img/forwhom2.webp"
                 alt="Коуч"
-              />
+              >
               <h3 class="forwhom__list-item-title">
                 Консультантов и&nbsp;тренеров
               </h3>
               <ul class="forwhom__list-item-list">
-                <li>Инструменты для работы с клиентами</li>
-                <li>Сертификат</li>
+                <li class="section-descr">Инструменты для работы с клиентами</li>
+                <li class="section-descr">Сертификат</li>
               </ul>
             </li>
-            <div class="line"></div>
+
             <li class="flex forwhom__list-item">
               <img
                 class="forwhom__list-item-img"
                 src="./img/forwhom-3.webp"
                 alt="Консультан"
-              />
+              >
               <h3 class="forwhom__list-item-title">Тех, кто развивается</h3>
               <ul class="forwhom__list-item-list">
-                <li>Технологии для работы с собой</li>
+                <li class="section-descr">Технологии для работы с собой</li>
               </ul>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="bern">
-        <div class="container bern__content">
-          <div class="bern__cite">
+      <div class="bern">
+          <div class="container bern__cite">
             <blockquote class="text-xl italic text-gray-700">
               “Чаще всего детские решения, а не сознательное планирование в зрелом
               возрасте определяют судьбу человека”
             </blockquote>
             <footer class="mt-4 text-gray-500">— Э. Берн</footer>
           </div>
-
-        </div>
-      </section>
+      </div>
 
       <section class="value">
         <div class="container value__content">
@@ -203,37 +212,37 @@
           <div class="flex value__content">
             <div class="value__content-left">
               <ul class="list-reset flex value__list">
-                <li class="value__list-item">
+                <li class="section-descr value__list-item">
                   Получите самые необходимые в&nbsp;работе инструменты
                   использования&nbsp;ТА в&nbsp;лайфкоучинге
                   и&nbsp;организационном консультировании: ТА&nbsp;диагностика,
                   модели и&nbsp;инструменты работы с&nbsp;коучи, командами
                   и&nbsp;организациями.
                 </li>
-                <li class="value__list-item">
+                <li class=" section-descr value__list-item">
                   Научитесь диагностировать &laquo;боли&raquo;
                   и&nbsp;&laquo;потребности&raquo; коучи.
                 </li>
-                <li class="value__list-item">
+                <li class="section-descr value__list-item">
                   Получите целостную систему анализа человеческих отношений
                   на&nbsp;уровне личности, групп, организаций.
                 </li>
-                <li class="value__list-item">
+                <li class="section-descr value__list-item">
                   Пройдете самодиагностику и&nbsp;поймете, какие сценарии
                   управляют вашей жизнью, жизнью команды и&nbsp;организации.
                   Научитесь трансформировать сценарные паттерны, исходя
                   из&nbsp;осознанных целей и&nbsp;поставленных задач.
                 </li>
-                <li class="value__list-item">
+                <li class="section-descr value__list-item">
                   Повысите результативность в&nbsp;работе с&nbsp;коучи,
                   командами, организациями.
                 </li>
-                <li class="value__list-item">
+                <li class="section-descr value__list-item">
                   Сможете внедрить в&nbsp;свою жизнь и&nbsp;работу
                   c&nbsp;организациями, командами полученные, модели, техники
                   и&nbsp;инструменты
                 </li>
-                <li class="value__list-item">
+                <li class="section-descr value__list-item">
                   Овладев практическими инструментами, Вы&nbsp;сможете повысить
                   стоимость своих услуг.
                 </li>
@@ -273,7 +282,7 @@
                 теории.
               </p>
             </li>
-            <div class="line"></div>
+            <!--<div class="line"></div>-->
             <li class="flex forwhom__list-item">
               <img
                 class="goals__list-item-img"
@@ -286,7 +295,7 @@
                 сертификации)
               </p>
             </li>
-            <div class="line"></div>
+            <!--<div class="line"></div>-->
             <li class="flex forwhom__list-item">
               <img
                 class="goals__list-item-img"
@@ -299,7 +308,7 @@
         </div>
       </section>
 
-      <section class="section schedule">
+      <section class="section schedule" id="schedule">
         <div class="container schedule__content">
           <h2 class="title2 schedule__title">Расписание курса</h2>
           <p class="schedule__descr">
@@ -308,104 +317,104 @@
           <ul class="list-reset flex schedule__list">
             <li class="schedule__list-item">
               <h3 class="list-item__title">Модуль 1.</h3>
-              <p class="list-item__descr">
+              <p class="section-descr list-item__descr">
                 Базовые техники транзактного анализа в&nbsp;лайфкоучинге
                 и&nbsp;организационном консультировании.
               </p>
               <p>
                 <b>Даты проведения:</b>
-                <time class="timeblock" datetime="2024-09-28T10:00"
+                <time class="section-descr timeblock" datetime="2024-09-28T10:00"
                   >28.09.24 с 10:00 до 18:00</time
                 >
-                <time class="timeblock" datetime="2024-09-29T10:00"
+                <time class="section-descr timeblock" datetime="2024-09-29T10:00"
                   >29.09.24 с 10:00 до 18:00</time
                 >
               </p>
             </li>
             <li class="schedule__list-item">
               <h3 class="list-item__title">Модуль 2.</h3>
-              <p class="list-item__descr">
+              <p class="section-descr list-item__descr">
                 Продвинутые техники транзактного анализа в&nbsp;лайфкоучинге.
                 Часть&nbsp;1
               </p>
               <p>
                 <b>Даты проведения:</b>
-                <time class="timeblock" datetime="2024-10-02T19:00"
+                <time class="section-descr timeblock" datetime="2024-10-02T19:00"
                   >02.10.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-10-09T19:00"
+                <time class="section-descr timeblock" datetime="2024-10-09T19:00"
                   >09.10.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-10-16T19:00"
+                <time class="section-descr timeblock" datetime="2024-10-16T19:00"
                   >16.10.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-10-23T19:00"
+                <time class="section-descr timeblock" datetime="2024-10-23T19:00"
                   >23.10.2024 с 19.00 до 22.00.</time
                 >
               </p>
             </li>
             <li class="schedule__list-item">
               <h3 class="list-item__title">Модуль 3.</h3>
-              <p class="list-item__descr">
+              <p class="section-descr list-item__descr">
                 Продвинутые техники транзактного анализа в&nbsp;лайфкоучинге.
                 <span>Часть&nbsp;2</span>
               </p>
               <p>
                 <b>Даты проведения:</b>
-                <time class="timeblock" datetime="2024-11-06T19:00"
+                <time class="section-descr timeblock" datetime="2024-11-06T19:00"
                   >06.11.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-11-13T19:00"
+                <time class="section-descr timeblock" datetime="2024-11-13T19:00"
                   >13.11.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-11-20T19:00"
+                <time class="section-descr timeblock" datetime="2024-11-20T19:00"
                   >20.11.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-11-27T19:00"
+                <time class="section-descr timeblock" datetime="2024-11-27T19:00"
                   >27.11.2024 с 19.00 до 22.00.</time
                 >
               </p>
             </li>
             <li class="schedule__list-item">
               <h3 class="list-item__title">Модуль 4.</h3>
-              <p class="list-item__descr">
+              <p class="section-descr list-item__descr">
                 Продвинутые техники транзактного анализа в&nbsp;организационном
                 консультировании.
               </p>
               <p>
                 <b>Даты проведения:</b>
-                <time class="timeblock" datetime="2024-12-04T19:00"
+                <time class="section-descr timeblock" datetime="2024-12-04T19:00"
                   >04.12.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-12-11T19:00"
+                <time class="section-descr timeblock" datetime="2024-12-11T19:00"
                   >11.12.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-12-18T19:00"
+                <time class="section-descr timeblock" datetime="2024-12-18T19:00"
                   >18.12.2024 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2024-12-25T19:00"
+                <time class="section-descr timeblock" datetime="2024-12-25T19:00"
                   >25.12.2024 с 19.00 до 22.00.</time
                 >
               </p>
             </li>
             <li class="schedule__list-item">
               <h3 class="list-item__title">Модуль 5.</h3>
-              <p class="list-item__descr">
+              <p class="section-descr list-item__descr">
                 Транзактно-аналитическое лидерство в&nbsp;работе
                 с&nbsp;организациями.
               </p>
               <p>
                 <b>Даты проведения:</b>
-                <time class="timeblock" datetime="2025-01-22T19:00"
+                <time class="section-descr timeblock" datetime="2025-01-22T19:00"
                   >22.01.2025 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2025-02-05T19:00"
+                <time class="section-descr timeblock" datetime="2025-02-05T19:00"
                   >05.02.2025 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2025-02-12T19:00"
+                <time class="section-descr timeblock" datetime="2025-02-12T19:00"
                   >12.02.2025 с 19.00 до 22.00.</time
                 >
-                <time class="timeblock" datetime="2025-02-19T19:00"
+                <time class="section-descr timeblock" datetime="2025-02-19T19:00"
                   >19.02.2025 с 19.00 до 22.00.</time
                 >
               </p>
@@ -433,7 +442,9 @@
                     в&nbsp;лайфкоучинге и&nbsp;организационном
                     консультировании.</span
                   >
-                  <!--<span class="program__list-icon"></span>-->
+                  <svg class="icon akk-arrow">
+                    <use href="#akk-arrow" class="akk-arrow2"></use>
+                  </svg>
                 </button>
               </h2>
               <div
@@ -443,7 +454,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <ul class="accordion__sublist">
+                  <ul class="section-descr accordion__sublist">
                     <li class="accordion__sublist-item">
                       <p class="accordion__sublist-text">
                         Усвоите принципы&nbsp;ТА в&nbsp;коучинге
@@ -525,6 +536,9 @@
                     >Модуль&nbsp;2. Продвинутые техники транзактного анализа
                     в&nbsp;лайфкоучинге. Часть&nbsp;1</span
                   >
+                  <svg class="icon akk-arrow">
+                    <use href="#akk-arrow" class="akk-arrow2"></use>
+                  </svg>
                 </button>
               </h2>
               <div
@@ -534,7 +548,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <ul class="accordion__sublist">
+                  <ul class="section-descr accordion__sublist">
                     <li class="accordion__sublist-item">
                       <p class="accordion__sublist-text">
                         Научитесь использовать план сессии
@@ -633,9 +647,12 @@
                   aria-controls="collapseThree"
                 >
                   <span class="program__list-title">
-                    Продвинутые техники транзактного анализа
+                    Модуль&nbsp;3. Продвинутые техники транзактного анализа
                     в&nbsp;лайфкоучинге. Часть&nbsp;2</span
                   >
+                  <svg class="icon akk-arrow">
+                    <use href="#akk-arrow" class="akk-arrow2"></use>
+                  </svg>
                 </button>
               </h2>
               <div
@@ -645,7 +662,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <ul class="accordion__sublist">
+                  <ul class="section-descr accordion__sublist">
                     <li class="accordion__sublist-item">
                       <p class="accordion__sublist-text">
                         Научитесь отслеживать переносы и&nbsp;контрпереносы
@@ -712,6 +729,9 @@
                     >Модуль 4. Продвинутые техники транзактного анализа в
                     организационном консультировании.</span
                   >
+                  <svg class="icon akk-arrow">
+                    <use href="#akk-arrow" class="akk-arrow2"></use>
+                  </svg>
                 </button>
               </h2>
               <div
@@ -721,7 +741,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <ul class="accordion__sublist">
+                  <ul class="section-descr accordion__sublist">
                     <li class="accordion__sublist-item">
                       <p class="accordion__sublist-text">
                         Усвоите механизм формирования и&nbsp;инструменты анализа
@@ -803,6 +823,9 @@
                     >Модуль&nbsp;5. Транзактно-аналитическое лидерство
                     в&nbsp;работе с&nbsp;организациями.</span
                   >
+                  <svg class="icon akk-arrow">
+                    <use href="#akk-arrow" class="akk-arrow2"></use>
+                  </svg>
                 </button>
               </h2>
               <div
@@ -812,7 +835,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <ul class="accordion__sublist">
+                  <ul class="section-descr accordion__sublist">
                     <li class="accordion__sublist-item">
                       <p class="accordion__sublist-text">
                         Научитесь работать с&nbsp;ТА лидерством (ответственный
@@ -887,6 +910,9 @@
                   <span class="program__list-title"
                     >Для допуска к сертификации*</span
                   >
+                  <svg class="icon akk-arrow">
+                    <use href="#akk-arrow" class="akk-arrow2"></use>
+                  </svg>
                 </button>
               </h2>
               <div
@@ -895,7 +921,7 @@
                 aria-labelledby="headingSix"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
+                <div class="section-descr accordion-body">
                   <p>
                     *доступен только для проф.коучей (не менее 60 часов, уроверь
                     РСС) и дипломированных психологов
@@ -956,7 +982,7 @@
         <div class="container reviews__content">
           <h2 class="title2 reviews__title">Отзывы участников</h2>
           <div class="swiper">
-            <div class="swiper-wrapper">
+            <div class="section-descr swiper-wrapper">
               <div class="swiper-slide">
                 <div class="swiper__content flex">
                   <p class="swiper__content-top">
@@ -1116,7 +1142,6 @@
                       <iframe
                         src="https://www.youtube.com/embed/Yr87tdL9_00"
                         title="YouTube video"
-                        frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                       >
@@ -1331,14 +1356,12 @@
       </section>
 
       <section class="section coach" id="coach">
-        <div class="container flex coach__container">
-          <div class="coach-left">
-            <img src="./img/team1.webp" alt="фото Илья Шмелёв" />
-          </div>
-          <article class="flex coach__right">
+        <figure class="container flex coach__container">
+            <img class="coach-left" src="./img/team1.webp" alt="Илья Шмелев - тренер" />
+          <figcaption class="flex coach__right">
             <h2 class="title2 coach__title">Илья Шмелев - тренер</h2>
             <div class="coach__right-line"></div>
-            <div class="coach__right-article">
+            <div class="section-descr coach__right-article">
               &bull; Старший преподаватель НИУ ВШЭ (магистерская программа
               &laquo;Консультативная психология. Персоналогия&raquo;, трек
               подготовки &laquo;Транзактный анализ. Мультипрофильное
@@ -1357,8 +1380,8 @@
               &bull; Соавтор колод коучинговых ассоциативных карт
               &laquo;КАК&raquo; и&nbsp;&laquo;Будущее&raquo;.
             </div>
-          </article>
-        </div>
+          </figcaption>
+        </figure>
       </section>
 
       <section class="section pre-req">
@@ -1366,7 +1389,7 @@
           <h2 class="title2 pre-req__title">Для допуска к сертификации*</h2>
           <div class="flex pre-req__descr">
             <p class="pre-req__descr-text">необходимо сдать до&nbsp;30.03.25</p>
-            <p class="pre-req__descr-text">*доступен только для проф.коучей (не&nbsp;менее 60&nbsp;часов) и&nbsp;дипломированных психологов
+            <p class="pre-req__descr-text"><strong>*доступен только для проф.коучей (не&nbsp;менее 60&nbsp;часов) и&nbsp;дипломированных психологов</strong>
               </p>
             <p class="">(бакалавриат/магистратура/специалитет)</p>
             <p class="pre-req__descr-text">Предоставление подтверждающих сертификатов/дипломов обязательно.</p>
@@ -1374,29 +1397,67 @@
           <div class="timeline">
             <div class="timeline__item">
               <div class="timeline__point">
-                1
-                <span></span>
+
+                <span data-label="1"></span>
               </div>
               <div class="timeline__label">
-                <p class="">3&nbsp;супервизии в&nbsp;группе</p>
-                <p class="">Даты супервизий&nbsp;&mdash; уточняются, с&nbsp;19.00 до&nbsp;22.00</p>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__point">2<span></span></div>
-              <div class="timeline__label">
-                <p class="l">10&nbsp;аудиозаписей</p>
-                <p class="">Как Коуч в&nbsp;тройках в&nbsp;группе с&nbsp;обратной связью себе от&nbsp;наблюдателя</p>
+                <p class="timeline__label-condition">3&nbsp;супервизии в&nbsp;группе</p>
+                <p class="section-descr">Даты супервизий&nbsp;&mdash; уточняются, с&nbsp;19.00 до&nbsp;22.00</p>
               </div>
             </div>
             <div class="timeline__item">
-              <div class="timeline__point">3<span></span></div>
+              <div class="timeline__point"><span data-label="2"></span></div>
               <div class="timeline__label">
-                <p class="">1&nbsp;аудиозапись</p>
-                <p class="">С&nbsp;транскрибацией с&nbsp;внешним клиентом и&nbsp;подробным эссе-анализом своей сессии</p>
+                <p class="timeline__label-condition">10&nbsp;аудиозаписей</p>
+                <p class="section-descr">Как Коуч в&nbsp;тройках в&nbsp;группе с&nbsp;обратной связью себе от&nbsp;наблюдателя</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__point"><span data-label="3"></span></div>
+              <div class="timeline__label">
+                <p class="timeline__label-condition">1&nbsp;аудиозапись</p>
+                <p class="section-descr">С&nbsp;транскрибацией с&nbsp;внешним клиентом и&nbsp;подробным эссе-анализом своей сессии</p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section price" id="price">
+        <div class="container price__content">
+          <h2 class="title2 price__title">Выберите удобный вариант участия</h2>
+          <ul class="list-reset flex price__list">
+            <li class="price__list-item">
+              <h3 class="list-item__title">1 модуль</h3>
+              <p class="section-descr list-item__descr">
+                <span class="list-item__summa">14 500 рублей</span>
+                <span>(помодульная оплата) (Действует скидка 10% для выпускников ICU)</span>
+              </p>
+
+            </li>
+            <li class="price__list-item">
+              <h3 class="list-item__title">Пакет "Сертификация"</h3>
+              <p class="section-descr list-item__descr">
+                <span class="list-item__summa">14 500 рублей</span>
+                <span>(Оплата производится только после прохождения собеседования с&nbsp;организаторами)</span>
+              </p>
+            </li>
+            <li class="price__list-item">
+              <h3 class="list-item__title">Полная оплата программы</h3>
+              <p class="section-descr list-item__descr">
+                <span class="list-item__summa">62 500 рублей</span>
+                <span>(12&nbsp;500 рублей за&nbsp;модуль)</span>
+              </p>
+            </li>
+            <li class="price__list-item">
+              <h3 class="list-item__title">Программа + пакет "Сертификация</h3>
+              <p class="section-descr list-item__descr">
+                <span class="list-item__summa">72 500 рублей</span>
+                <span>(полная оплата)</span>
+              </p>
+            </li>
+
+          </ul>
         </div>
       </section>
 

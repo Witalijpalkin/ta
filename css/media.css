@@ -3,6 +3,10 @@
     padding: 30px 15px;
   }
 
+  .hero {
+    min-height: 620px;
+  }
+
   .hero__content-left {
     width: 80%;
   }
@@ -114,13 +118,17 @@
     margin-bottom: 25px;
   }
 
-  .hero__content {
-    padding-left: 30px;
+  .section-descr {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
+    .hero {
+    min-height: 320px;
+  }
 
-  .hero__content-dwnl {
-    padding-right: 45px;
+  .hero__content {
+    padding-left: 30px;
   }
 
   .hero__title {
@@ -129,10 +137,6 @@
 
   .hero__descr {
     font-size: 20px;
-  }
-
-  .hero__content-dwnl {
-    display: none;
   }
 
   .forwhom__list {
@@ -144,7 +148,7 @@
     display: none;
   }
 
-  .bern__content {
+  .bern__cite {
     width: 90%;
   }
 
@@ -174,7 +178,7 @@
 
 
   .program__list-title {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
   }
 
@@ -185,6 +189,10 @@
 
   .swiper__content-top {
     max-height: 380px;
+  }
+
+  .timeline {
+    grid-template-columns: 5% 20px 1fr;
   }
 }
 
@@ -197,3 +205,4 @@
     max-width: 95%;
   }
 }
+
