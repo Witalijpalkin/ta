@@ -249,7 +249,8 @@ position: relative;
 }
 
 .header__nav-item--dwnl {
-  background: 100% / 40% 40% url(../img/dwn.png) no-repeat;
+  padding-right: 40px;
+  background: 100% / 15% 93% url(../img/dwn.png) no-repeat;
 }
 
 .header__nav-link {
@@ -465,6 +466,10 @@ position: relative;
 
 /*SCHEDULE*/
 
+.schedule {
+  background-color: var(--swissCoffee);
+}
+
 
 .schedule__descr {
   text-align: center;
@@ -479,9 +484,10 @@ position: relative;
 .schedule__list-item {
   width: calc(33.333% - 40px);
   padding: 10px;
+  /*background-color: var(--white);*/
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
-  box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 8px rgba(213, 202, 202, 0.1);
 }
 
 .schedule__list-item:hover {
@@ -493,18 +499,27 @@ position: relative;
   margin-bottom: 15px;
 }
 
-.timeblock {
+.schedule__timeblock {
+  border-top: 2px solid var(--redTree);
+}
+
+.schedule__list-item span {
   display: block;
-  margin-bottom: 5px;
 }
 
 .list-item__descr {
+  height: 35%;
   line-height: 1.4;
+  margin-bottom: 10px;
 }
 
-.program {
-  background-color: var(--swissCoffee);
-}
+
+
+
+
+
+/*PROGRAM*/
+
 
 .program__list-title {
   color: #000;
@@ -768,6 +783,6 @@ align-items: start;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.price__list-item *:not(:last-child) {
+.price__list-item *{
   margin-bottom: 15px;
 }

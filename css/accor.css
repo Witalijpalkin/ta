@@ -25,6 +25,12 @@
 .accordion-button:hover {
   color: var(--redTree);
 }
+
+.accordion --bs-accordion-border-color {
+  border-color: none;
+  border: none;
+}
+
 .accordion-button:hover .program__list-title {
   transform: scale(101%);
 }
@@ -50,4 +56,15 @@
   background-color: transparent;
   outline: none;
   box-shadow: none;
+}
+
+
+
+.accordion-item {
+  border: none !important;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
 }

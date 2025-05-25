@@ -22,13 +22,20 @@
     width: 65%;
   }
 
+  .schedule__list {
+    justify-content: space-evenly;
+  }
+
+  .list-item__descr {
+  height: 40%;
+  }
+
   .price__list {
     gap: 25px 15px ;
   }
 
    .price__list-item {
     width: calc(45%);
-
   }
 }
 
@@ -108,7 +115,7 @@
   }
 
   .schedule__list-item {
-    width: 40%;
+    width: 47%;
   }
 
   .coach__container {
@@ -116,9 +123,10 @@
     align-items: center;
   }
 
-  .coach-left {
-    max-width: 80%;
+  .list-item__descr {
+  height: 35%;
   }
+
 
 }
 
@@ -187,7 +195,11 @@
   }
 
   .schedule__list-item {
-    width: 100%;
+    width: 80%;
+  }
+
+    .list-item__descr {
+  height: 25%;
   }
 
 
@@ -226,5 +238,20 @@
     .coach-left {
     max-width: 95%;
   }
+
+  .schedule__list-item {
+        width: 100%;
+    }
 }
 
+
+@media (max-height: 560px) {
+  .header__nav {
+    height: 250px;
+  }
+
+  .header__nav-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
