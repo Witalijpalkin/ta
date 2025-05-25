@@ -189,42 +189,40 @@ body {
 
 .header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   align-items: center;
   background-color: rgb(0, 0, 0, 0.7);
   z-index: 10;
   height: 70px;
-    /*transform: translateY(-100%);*/
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
   z-index: 10;
 }
 
-.heder--fixed {
+/* Фиксированный хедер появляется как бы сверху */
+.header--fixed {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  z-index: 100;
+
+  transform: translateY(-100%); /* изначально скрыт вверх */
+  opacity: 0;
+}
+
+/* Когда фиксирован, но не скрыт — появляется сверху */
+.header--fixed:not(.header--hidden) {
+  transform: translateY(0); /* мягко спускается на место */
+  opacity: 1;
+}
+
+/* При скрытии — уходит вверх */
+.header--hidden {
   transform: translateY(-100%);
+  opacity: 0;
 }
-
-.header--visible {
-  transform: translateY(0);
-}
-
-
-/*.header__hidden .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translateY(0);
-}
-.header__hidden main {
-
-}*/
-
-
-
 .header__container {
   max-width: 1200px;
   flex: 1;
