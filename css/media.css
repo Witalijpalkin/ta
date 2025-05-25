@@ -37,6 +37,22 @@
    .price__list-item {
     width: calc(45%);
   }
+
+  .coach__container {
+    display: block;
+  }
+
+  .coach__right {
+    display: block;
+  }
+
+  .coach-left {
+    float: left;
+  width: 250px;
+  height: auto;
+  margin: 15px 20px 20px 0;
+  border-radius: 10px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -199,7 +215,7 @@
   }
 
     .list-item__descr {
-  height: 25%;
+  height: 30%;
   }
 
 
@@ -227,6 +243,14 @@
 
    .price__list-item {
     width: calc(75%);
+  }
+
+  .coach__container {
+    display: flex;
+  }
+
+  .coach__right {
+    display: flex;
   }
 }
 

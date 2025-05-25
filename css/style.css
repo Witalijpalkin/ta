@@ -621,6 +621,7 @@ position: relative;
 /*COACH*/
 
 .coach__container {
+  display: flex;
 align-items: start;
   gap: 30px;
 }
@@ -630,6 +631,7 @@ align-items: start;
 }
 
 .coach__right {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -785,4 +787,20 @@ align-items: start;
 
 .price__list-item *{
   margin-bottom: 15px;
+}
+
+
+.goal-button {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+}
+
+.goal-button .btn {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.goal-button p {
+  text-align: center;
 }
