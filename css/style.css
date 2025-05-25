@@ -751,12 +751,12 @@ align-items: start;
 
 .price__list {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 25px;
 }
 
 .price__list-item {
-  width: calc(21%);
+  width: calc(23%);
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
