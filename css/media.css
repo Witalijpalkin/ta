@@ -278,4 +278,8 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+   .swiper__content-top {
+    max-height: 300px;
+  }
 }
